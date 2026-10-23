@@ -2376,303 +2376,279 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: "#666666",
   },
-
   pageHeader: {
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
     marginBottom: 20,
+    gap: 12,
   },
-
   pageTitle: {
-    fontSize: 28,
+    fontSize: 24,
     fontWeight: "800",
     color: "#111111",
   },
-
   pageSubtitle: {
     marginTop: 4,
     fontSize: 14,
     color: "#666666",
   },
-
   addButton: {
+    minHeight: 44,
     backgroundColor: "#111111",
     paddingHorizontal: 16,
-    paddingVertical: 11,
-    borderRadius: 10,
+    paddingVertical: 10,
+    borderRadius: 12,
+    alignItems: "center",
+    justifyContent: "center",
   },
-
   addButtonText: {
     color: "#FFFFFF",
     fontSize: 14,
     fontWeight: "700",
   },
-
   summaryRow: {
     flexDirection: "row",
     gap: 10,
-    marginBottom: 24,
+    marginBottom: 20,
   },
-
   summaryCard: {
     flex: 1,
+    minWidth: 0,
     backgroundColor: "#FFFFFF",
-    borderRadius: 10,
+    borderRadius: 12,
     borderWidth: 1,
-    borderColor: "#DDDDDD",
-    paddingVertical: 15,
-    paddingHorizontal: 10,
+    borderColor: "#EEEEEE",
+    paddingVertical: 14,
+    paddingHorizontal: 6,
     alignItems: "center",
+    justifyContent: "center",
   },
-
   summaryNumber: {
     fontSize: 22,
     fontWeight: "800",
     color: "#111111",
   },
-
   summaryLabel: {
-    marginTop: 3,
+    marginTop: 4,
     fontSize: 12,
     color: "#666666",
     fontWeight: "500",
   },
-
   sectionTitle: {
-    fontSize: 19,
-    fontWeight: "800",
+    fontSize: 18,
+    fontWeight: "700",
     color: "#111111",
     marginBottom: 12,
   },
-
   inactiveSectionTitle: {
-    marginTop: 16,
+    marginTop: 20,
   },
-
   vehicleCard: {
     backgroundColor: "#FFFFFF",
-    borderRadius: 10,
+    borderRadius: 12,
     borderWidth: 1,
-    borderColor: "#DDDDDD",
-    padding: 16,
+    borderColor: "#EEEEEE",
+    padding: 14,
     marginBottom: 12,
   },
-
   vehicleHeader: {
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "flex-start",
+    gap: 10,
   },
-
   vehicleHeaderLeft: {
     flex: 1,
-    paddingRight: 10,
+    minWidth: 0,
+    paddingRight: 2,
   },
-
   registrationNumber: {
-    fontSize: 20,
-    fontWeight: "900",
+    fontSize: 18,
+    fontWeight: "800",
     color: "#111111",
     letterSpacing: 0.3,
   },
-
   vehicleName: {
     marginTop: 4,
     fontSize: 14,
     color: "#666666",
   },
-
   statusBadge: {
-    paddingHorizontal: 10,
+    paddingHorizontal: 9,
     paddingVertical: 5,
-    borderRadius: 20,
+    borderRadius: 12,
+    flexShrink: 0,
   },
-
   activeBadge: {
-    backgroundColor: "#F0F0F0",
+    backgroundColor: "#EEEEEE",
   },
-
   inactiveBadge: {
     backgroundColor: "#EEEEEE",
   },
-
   statusText: {
     fontSize: 11,
     fontWeight: "700",
   },
-
   activeStatusText: {
     color: "#111111",
   },
-
   inactiveStatusText: {
     color: "#666666",
   },
-
   detailsContainer: {
     flexDirection: "row",
     flexWrap: "wrap",
-    marginTop: 16,
+    marginTop: 14,
     borderTopWidth: 1,
     borderTopColor: "#EEEEEE",
-    paddingTop: 13,
+    paddingTop: 12,
   },
-
   detailItem: {
     width: "33.33%",
+    minWidth: 0,
     marginBottom: 8,
+    paddingRight: 4,
   },
-
   detailLabel: {
     fontSize: 11,
-    color: "#999999",
-    marginBottom: 3,
+    color: "#777777",
+    marginBottom: 4,
   },
-
   detailValue: {
     fontSize: 13,
     fontWeight: "600",
     color: "#111111",
   },
-
   driverSection: {
     marginTop: 8,
     paddingTop: 12,
     borderTopWidth: 1,
     borderTopColor: "#EEEEEE",
   },
-
   driverLabel: {
     fontSize: 11,
-    color: "#999999",
-    marginBottom: 3,
+    color: "#777777",
+    marginBottom: 4,
   },
-
   driverName: {
     fontSize: 14,
     fontWeight: "700",
     color: "#111111",
   },
-
   noDriverText: {
     fontSize: 14,
-    color: "#999999",
+    color: "#777777",
   },
-
   actionRow: {
     flexDirection: "row",
     gap: 10,
-    marginTop: 15,
+    marginTop: 14,
   },
-
   secondaryButton: {
     flex: 1,
+    minWidth: 0,
     minHeight: 44,
-    borderRadius: 10,
+    borderRadius: 12,
     borderWidth: 1,
-    borderColor: "#DDDDDD",
+    borderColor: "#EEEEEE",
     backgroundColor: "#FFFFFF",
     alignItems: "center",
     justifyContent: "center",
+    paddingHorizontal: 8,
   },
-
   secondaryButtonText: {
     fontSize: 14,
     fontWeight: "700",
     color: "#111111",
   },
-
   dangerButton: {
-    backgroundColor: "#F7F7F7",
+    backgroundColor: "#F7F8FA",
   },
-
   dangerButtonText: {
     fontSize: 14,
     fontWeight: "700",
     color: "#111111",
   },
-
   primarySmallButton: {
     flex: 1,
+    minWidth: 0,
     minHeight: 44,
-    borderRadius: 10,
-    backgroundColor: "#111111",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-
-  primarySmallButtonText: {
-    fontSize: 14,
-    fontWeight: "700",
-    color: "#FFFFFF",
-  },
-
-  driverActionsRow: {
-    flexDirection: "row",
-    gap: 8,
-    marginTop: 10,
-  },
-
-  driverActionButton: {
-    flex: 1,
-    minHeight: 44,
-    borderRadius: 10,
+    borderRadius: 12,
     backgroundColor: "#111111",
     alignItems: "center",
     justifyContent: "center",
     paddingHorizontal: 8,
   },
-
+  primarySmallButtonText: {
+    fontSize: 14,
+    fontWeight: "700",
+    color: "#FFFFFF",
+  },
+  driverActionsRow: {
+    flexDirection: "row",
+    gap: 8,
+    marginTop: 10,
+  },
+  driverActionButton: {
+    flex: 1,
+    minWidth: 0,
+    minHeight: 44,
+    borderRadius: 12,
+    backgroundColor: "#111111",
+    alignItems: "center",
+    justifyContent: "center",
+    paddingHorizontal: 8,
+  },
   driverActionButtonText: {
     color: "#FFFFFF",
-    fontSize: 13,
+    fontSize: 12,
     fontWeight: "700",
+    textAlign: "center",
   },
-
   unassignDriverButton: {
     backgroundColor: "#FFFFFF",
     borderWidth: 1,
-    borderColor: "#111111",
+    borderColor: "#EEEEEE",
   },
-
   unassignDriverButtonText: {
     color: "#111111",
-    fontSize: 13,
+    fontSize: 12,
     fontWeight: "700",
+    textAlign: "center",
   },
-
   emptyCard: {
     backgroundColor: "#FFFFFF",
-    borderRadius: 10,
+    borderRadius: 12,
     borderWidth: 1,
-    borderColor: "#DDDDDD",
+    borderColor: "#EEEEEE",
     padding: 24,
     alignItems: "center",
     marginBottom: 18,
   },
-
   emptyTitle: {
     fontSize: 17,
     fontWeight: "800",
     color: "#111111",
+    textAlign: "center",
   },
-
   emptyText: {
     marginTop: 6,
     fontSize: 13,
     color: "#666666",
     textAlign: "center",
+    lineHeight: 19,
   },
-
   emptyAddButton: {
     marginTop: 16,
+    minHeight: 44,
     backgroundColor: "#111111",
     paddingHorizontal: 18,
     paddingVertical: 11,
-    borderRadius: 10,
+    borderRadius: 12,
+    alignItems: "center",
+    justifyContent: "center",
   },
-
   emptyAddButtonText: {
     color: "#FFFFFF",
     fontSize: 14,
@@ -2696,29 +2672,32 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     padding: 20,
   },
-
   vehicleModal: {
+    width: "100%",
+    maxWidth: 560,
+    alignSelf: "center",
     backgroundColor: "#FFFFFF",
     borderTopLeftRadius: 20,
     borderTopRightRadius: 20,
     padding: 20,
     maxHeight: "92%",
   },
-
   driverModal: {
+    width: "100%",
+    maxWidth: 560,
+    alignSelf: "center",
     backgroundColor: "#FFFFFF",
     borderTopLeftRadius: 20,
     borderTopRightRadius: 20,
     padding: 20,
     maxHeight: "88%",
   },
-
   calendarModal: {
     width: "100%",
     maxWidth: 420,
     maxHeight: "85%",
     backgroundColor: "#FFFFFF",
-    borderRadius: 18,
+    borderRadius: 16,
     padding: 20,
   },
 
@@ -2728,9 +2707,8 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     marginBottom: 20,
   },
-
   modalTitle: {
-    fontSize: 21,
+    fontSize: 20,
     fontWeight: "800",
     color: "#111111",
   },
@@ -2744,12 +2722,11 @@ const styles = StyleSheet.create({
   driverModalHeaderContent: {
     flex: 1,
   },
-
   closeButton: {
-    width: 34,
-    height: 34,
-    borderRadius: 17,
-    backgroundColor: "#F3F3F3",
+    width: 36,
+    height: 36,
+    borderRadius: 18,
+    backgroundColor: "#F7F8FA",
     alignItems: "center",
     justifyContent: "center",
   },
@@ -2759,31 +2736,28 @@ const styles = StyleSheet.create({
     lineHeight: 27,
     color: "#111111",
   },
-
   inputLabel: {
     fontSize: 13,
     fontWeight: "700",
     color: "#111111",
     marginBottom: 7,
-    marginTop: 10,
+    marginTop: 12,
   },
-
   input: {
-    height: 46,
+    height: 48,
     borderWidth: 1,
-    borderColor: "#DDDDDD",
-    borderRadius: 10,
+    borderColor: "#EEEEEE",
+    borderRadius: 12,
     paddingHorizontal: 13,
     backgroundColor: "#FFFFFF",
     color: "#111111",
     fontSize: 14,
   },
-
   selectorInput: {
-    minHeight: 46,
+    minHeight: 48,
     borderWidth: 1,
-    borderColor: "#DDDDDD",
-    borderRadius: 10,
+    borderColor: "#EEEEEE",
+    borderRadius: 12,
     paddingHorizontal: 13,
     backgroundColor: "#FFFFFF",
     flexDirection: "row",
@@ -2815,11 +2789,10 @@ const styles = StyleSheet.create({
     fontSize: 11,
     color: "#999999",
   },
-
   saveButton: {
-    height: 48,
+    minHeight: 48,
     marginTop: 22,
-    borderRadius: 10,
+    borderRadius: 12,
     backgroundColor: "#111111",
     alignItems: "center",
     justifyContent: "center",
@@ -2830,12 +2803,11 @@ const styles = StyleSheet.create({
     fontSize: 15,
     fontWeight: "800",
   },
-
   cancelButton: {
     minHeight: 44,
-    borderRadius: 10,
+    borderRadius: 12,
     borderWidth: 1,
-    borderColor: "#DDDDDD",
+    borderColor: "#EEEEEE",
     backgroundColor: "#FFFFFF",
     alignItems: "center",
     justifyContent: "center",
@@ -3279,42 +3251,37 @@ const styles = StyleSheet.create({
     fontSize: 13,
     fontWeight: "800",
   },
-  
   searchContainer: {
-  flexDirection: "row",
-  alignItems: "center",
-  backgroundColor: "#FFFFFF",
-  borderWidth: 1,
-  borderColor: "#DDDDDD",
-  borderRadius: 10,
-  paddingHorizontal: 12,
-  minHeight: 48,
-  marginBottom: 18,
-},
-
-searchIcon: {
-  fontSize: 23,
-  color: "#666666",
-  marginRight: 8,
-},
-
-searchInput: {
-  flex: 1,
-  minWidth: 0,
-  paddingVertical: 10,
-  fontSize: 14,
-  color: "#111111",
-},
-
-clearSearchButton: {
-  width: 30,
-  height: 30,
-  alignItems: "center",
-  justifyContent: "center",
-},
-
-clearSearchText: {
-  fontSize: 24,
-  color: "#666666",
-},
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: "#FFFFFF",
+    borderWidth: 1,
+    borderColor: "#EEEEEE",
+    borderRadius: 12,
+    paddingHorizontal: 12,
+    minHeight: 48,
+    marginBottom: 20,
+  },
+  searchIcon: {
+    fontSize: 23,
+    color: "#666666",
+    marginRight: 8,
+  },
+  searchInput: {
+    flex: 1,
+    minWidth: 0,
+    paddingVertical: 10,
+    fontSize: 14,
+    color: "#111111",
+  },
+  clearSearchButton: {
+    width: 32,
+    height: 32,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  clearSearchText: {
+    fontSize: 24,
+    color: "#666666",
+  },
 });
