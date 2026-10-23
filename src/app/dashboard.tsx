@@ -405,9 +405,7 @@ export default function DashboardScreen() {
 
             <Text style={styles.statNumber}>{vehiclesCount}</Text>
 
-            <View>
-              <Text>Vehicles</Text>
-            </View>
+            <Text style={styles.statLabel}>Vehicles</Text>
           </TouchableOpacity>
 
           <TouchableOpacity
@@ -508,7 +506,7 @@ export default function DashboardScreen() {
               router.push("/vehicle-document-management" as Href)
             }
           >
-            <Text style={styles.actionIcon}> </Text>
+            <Text style={styles.actionIcon}>▤</Text>
 
             <Text style={styles.actionText}>Vehicle Documents</Text>
           </TouchableOpacity>
