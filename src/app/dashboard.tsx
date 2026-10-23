@@ -658,6 +658,7 @@ export default function DashboardScreen() {
 }
 
 
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -665,8 +666,8 @@ const styles = StyleSheet.create({
   },
 
   scrollContent: {
-    paddingHorizontal: 20,
-    paddingTop: 12,
+    paddingHorizontal: 16,
+    paddingTop: 16,
     paddingBottom: 110,
   },
 
@@ -674,18 +675,19 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    marginBottom: 8,
+    marginBottom: 20,
   },
 
   logo: {
-    fontSize: 28,
+    fontSize: 26,
     fontWeight: "800",
+    color: "#111111",
   },
 
   greeting: {
     marginTop: 4,
     color: "#666666",
-    fontSize: 15,
+    fontSize: 14,
   },
 
   profileCircle: {
@@ -704,57 +706,63 @@ const styles = StyleSheet.create({
   },
 
   sectionTitle: {
-    fontSize: 20,
+    fontSize: 18,
     fontWeight: "700",
-    marginBottom: 14,
-    marginTop: 0,
+    color: "#111111",
+    marginBottom: 12,
+    marginTop: 4,
   },
 
   statsGrid: {
     flexDirection: "row",
     flexWrap: "wrap",
     justifyContent: "space-between",
-    marginBottom: 25,
+    marginBottom: 20,
   },
 
   statCard: {
     width: "48%",
+    minHeight: 120,
     backgroundColor: "#FFFFFF",
-    borderRadius: 16,
-    padding: 18,
+    borderRadius: 12,
+    padding: 14,
     marginBottom: 12,
     borderWidth: 1,
     borderColor: "#EEEEEE",
   },
 
   statIcon: {
-    fontSize: 22,
-    marginBottom: 10,
+    fontSize: 21,
+    marginBottom: 8,
   },
 
   statNumber: {
-    fontSize: 23,
+    fontSize: 22,
     fontWeight: "800",
+    color: "#111111",
+    flexShrink: 1,
   },
 
   statLabel: {
     color: "#666666",
     marginTop: 4,
-    fontSize: 14,
+    fontSize: 13,
   },
 
   actionsGrid: {
     flexDirection: "row",
     flexWrap: "wrap",
     justifyContent: "space-between",
-    marginBottom: 25,
+    marginBottom: 20,
   },
 
   actionButton: {
     width: "48%",
-    height: 58,
+    minHeight: 54,
     backgroundColor: "#111111",
     borderRadius: 12,
+    paddingHorizontal: 8,
+    paddingVertical: 10,
     justifyContent: "center",
     alignItems: "center",
     marginBottom: 12,
@@ -763,22 +771,25 @@ const styles = StyleSheet.create({
 
   actionIcon: {
     color: "#FFFFFF",
-    fontSize: 22,
-    marginRight: 7,
+    fontSize: 20,
+    marginRight: 6,
   },
 
   actionText: {
     color: "#FFFFFF",
-    fontSize: 14,
+    fontSize: 13,
     fontWeight: "700",
+    flexShrink: 1,
+    textAlign: "center",
   },
 
   alertCard: {
     backgroundColor: "#FFFFFF",
-    borderRadius: 14,
-    padding: 15,
+    borderRadius: 12,
+    padding: 14,
     marginBottom: 12,
     flexDirection: "row",
+    alignItems: "center",
     borderWidth: 1,
     borderColor: "#EEEEEE",
   },
@@ -788,13 +799,14 @@ const styles = StyleSheet.create({
   },
 
   alertIcon: {
-    width: 38,
-    height: 38,
-    borderRadius: 19,
+    width: 36,
+    height: 36,
+    borderRadius: 18,
     backgroundColor: "#EEEEEE",
     justifyContent: "center",
     alignItems: "center",
     marginRight: 12,
+    flexShrink: 0,
   },
 
   expiredAlertIcon: {
@@ -807,6 +819,7 @@ const styles = StyleSheet.create({
 
   alertContent: {
     flex: 1,
+    minWidth: 0,
   },
 
   alertTitleRow: {
@@ -816,8 +829,9 @@ const styles = StyleSheet.create({
   },
 
   alertTitle: {
-    fontSize: 15,
+    fontSize: 14,
     fontWeight: "700",
+    color: "#111111",
     flex: 1,
   },
 
@@ -829,6 +843,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     marginLeft: 8,
+    flexShrink: 0,
   },
 
   redIndicatorText: {
@@ -845,32 +860,33 @@ const styles = StyleSheet.create({
   },
 
   bottomNav: {
-  height: 65,
-  backgroundColor: "#FFFFFF",
-  flexDirection: "row",
-  justifyContent: "space-around",
-  alignItems: "center",
-},
-
+    minHeight: 64,
+    backgroundColor: "#FFFFFF",
+    flexDirection: "row",
+    justifyContent: "space-around",
+    alignItems: "center",
+  },
 
   navItem: {
-  flex: 1,
-  alignItems: "center",
-  justifyContent: "center",
-},
+    flex: 1,
+    minHeight: 56,
+    alignItems: "center",
+    justifyContent: "center",
+  },
 
   navIcon: {
-    fontSize: 20,
+    fontSize: 19,
     marginBottom: 4,
   },
 
   navActive: {
     fontSize: 11,
     fontWeight: "700",
+    color: "#111111",
   },
 
   navText: {
-    fontSize: 11,
+    fontSize: 10,
     color: "#777777",
   },
 
@@ -884,6 +900,4 @@ const styles = StyleSheet.create({
     borderTopWidth: 1,
     borderTopColor: "#EEEEEE",
   },
-
-  
 });
